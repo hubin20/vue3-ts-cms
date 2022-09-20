@@ -4,3 +4,10 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+declare const VUE_APP_BASE_URL: string
+
+declare module '*.json' {
+  const value: any
+  export default value
+}
